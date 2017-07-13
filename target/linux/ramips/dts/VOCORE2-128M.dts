@@ -6,4 +6,36 @@
 		device_type = "memory";
 		reg = <0x0 0x8000000>;
 	};
+
+
+	sdhci@10130000 {
+		mediatek,cd-poll;
+		status = "okay";
+	};
+
+	palmbus@10000000 {
+		spi@b00 {
+			spidev@1 {
+				compatible = "linux,spidev";
+				spi-max-frequency = <10000000>;
+				reg = <1 0>;
+			};
+		};
+
+		uartlite@c00 {
+			status = "disabled";
+		};
+	};
+
+
+	pinctrl {
+		state_default: pinctrl0 {
+
+			uartlite {
+				ralink,group = "uart0";
+				ralink,function = "gpio";
+			};
+		};
+	};
+
 };
