@@ -21,21 +21,5 @@
 				reg = <1 0>;
 			};
 		};
-
-		uartlite@c00 {
-			status = "disabled";
-		};
 	};
-
-
-	pinctrl {
-		state_default: pinctrl0 {
-
-			uartlite {
-				ralink,group = "uart0";
-				ralink,function = "gpio";
-			};
-		};
-	};
-
 };

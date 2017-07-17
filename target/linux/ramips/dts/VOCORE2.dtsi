@@ -7,13 +7,13 @@
 	gpio-leds {
 		compatible = "gpio-leds";
 
-		wifiled {
-			label = "VoCore2:pink:wifi";
+		powerled {
+			label = "VoCore2:pink:power";
 			gpios = <&gpio1 12 0>;
 		};
-		ethernetled {
-			label = "VoCore2:green:eth0";
-			gpios = <&gpio0 18 0>;
+		readyled {
+			label = "VoCore2:blue:ready";
+			gpios = <&gpio1 5 0>;
 		};
 	};
 
@@ -69,7 +69,7 @@
 			};
 			led2 {
 				ralink,group = "p2led_an";
-				ralink,function = "gpio";
+				ralink,function = "p2led_an";
 			};
 			led1 {
 				ralink,group = "p1led_an";
@@ -77,7 +77,7 @@
 			};
 			led0 {
 				ralink,group = "p0led_an";
-				ralink,function = "gpio";
+				ralink,function = "p0led_an";
 			};
 		};
 	};
@@ -104,12 +104,6 @@
 			gpios = <&gpio0 21 0>;
 		};
 
-		gpio37 {
-			gpio-export,name = "gpio37";
-			gpio-export,direction_may_change = <1>;
-			gpios = <&gpio1 5 0>;
-		};
-
 		gpio38 {
 			gpio-export,name = "gpio38";
 			gpio-export,direction_may_change = <1>;
@@ -128,22 +122,10 @@
 			gpios = <&gpio1 8 0>;
 		};
 
-		gpio41 {
-			gpio-export,name = "gpio41";
-			gpio-export,direction_may_change = <1>;
-			gpios = <&gpio1 9 0>;
-		};
-
 		gpio42 {
 			gpio-export,name = "gpio42";
 			gpio-export,direction_may_change = <1>;
 			gpios = <&gpio1 10 0>;
-		};
-
-		gpio43 {
-			gpio-export,name = "gpio43";
-			gpio-export,direction_may_change = <1>;
-			gpios = <&gpio1 11 0>;
 		};
 	};
 	
