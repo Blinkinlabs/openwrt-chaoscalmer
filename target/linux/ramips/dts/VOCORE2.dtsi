@@ -18,7 +18,7 @@
 	};
 
 	chosen {
-		bootargs = "console=ttyS2,115200";
+		bootargs = "console=ttyS0,115200";
 	};
 
 	pinctrl {
@@ -145,7 +145,6 @@
 				partition@0 {
 					label = "u-boot";
 					reg = <0x0 0x30000>;
-					read-only;
 				};
 
 				partition@30000 {
