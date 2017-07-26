@@ -199,7 +199,7 @@ case $board in
 		set_wifi_led "vocore:green:status"
 		;;
 	vocore2)
-		ucidef_set_led_default "power" "power" "vocore2:pink:power" "1"
+		set_status_led "vocore2:pink:power"
 		set_status_led "vocore2:blue:ready"
 		;;
 	w306r-v20)
