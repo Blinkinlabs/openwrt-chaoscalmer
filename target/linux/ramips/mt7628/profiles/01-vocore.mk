@@ -11,9 +11,9 @@ define Profile/VOCORE2-128M
 		kmod-usb-core kmod-usb2 kmod-usb-ohci \
 		kmod-ledtrig-usbdev \
 		gdbserver curl strace coreutils coreutils-stty \
-	  	avahi-nodbus-daemon mountd mjpg-streamer \
-		uhttpd rpcd rpcd-mod-iwinfo git git-http samba36-server \
-		luci luci-theme-openwrt luci-app-mjpg-streamer luci-app-samba luci-lib-json \
+	  	avahi-nodbus-daemon mountd \
+		uhttpd rpcd rpcd-mod-iwinfo git git-http \
+		luci luci-theme-openwrt luci-lib-json \
 		rpcd-mod-rpcsys cgi-io spi-tools uboot-envtools \
 		kmod-fs-vfat kmod-fs-exfat kmod-i2c-core kmod-i2c-ralink \
 		kmod-nls-base kmod-nls-cp437 kmod-nls-iso8859-1 \
