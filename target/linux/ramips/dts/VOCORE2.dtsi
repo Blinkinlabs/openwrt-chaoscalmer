@@ -10,10 +10,14 @@
 		powerled {
 			label = "VoCore2:pink:power";
 			gpios = <&gpio1 12 0>;
+			linux,default-trigger = "heartbeat";
+			default-state = "on";
 		};
 		readyled {
 			label = "VoCore2:blue:ready";
 			gpios = <&gpio1 5 0>;
+			linux,default-trigger = "timer";
+			default-state = "on";
 		};
 	};
 
